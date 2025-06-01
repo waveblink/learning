@@ -5,10 +5,8 @@ player_name = input("What is your name, Adventurer? ")
 print(f"Welcome, {player_name}, to the goblin dungeon!")
 
 
-walking_choice = input("Do you want to go left or right? ")
-
-
-while counter_right or counter_left < 3:
+while counter_right < 3 and counter_left < 3:
+    walking_choice = input("Do you want to go left or right? ")
     if walking_choice == "left":
         print("You find a treasure chest!")
     elif walking_choice == "right":
